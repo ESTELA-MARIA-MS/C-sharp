@@ -7,97 +7,122 @@ namespace PilaresDePOO
         static void Main(string[] args)
         {
             Console.Clear();
-            Console.WriteLine("*********************Animales Mamiferos************************");
-            ClaseBaseMamiferos m1 = new ClaseBaseMamiferos();
+            Console.WriteLine("*******************Clase Base Animal**********************");
+            Console.WriteLine("");
+            Console.WriteLine("*******************Animales Mamiferos*********************");
+
+            Mamifero m1 = new Mamifero();
             m1.TipoAnimal = "Perro";
             m1.idAnimal = 1;
-            ClasePerro p1 = new ClasePerro("Max", 4, "Es Grande");
+            m1.Comida= "doogui";
+            
+            
+            Perro p1 = new Perro("Lasy", 4, "Es Pequeña");
 
-            Console.WriteLine("Tipo de Animal: " + m1.TipoAnimal);
+            Console.WriteLine("Especie de Animal: " + m1.TipoAnimal);
             Console.WriteLine("Nombre: " + p1.Nombre );
-            Console.WriteLine("Es Domestico? S/N :  " + p1.Esdomestico);
+            Console.WriteLine("Numero de Patas: " + p1.NumeroPatas);
+            Console.WriteLine("El Animal es Domestico? :  " + p1.ESdomestico);
             p1.latir();
+            Console.WriteLine("Su Alimentacion es: " + m1.Comida);
             Console.WriteLine("");
             Console.WriteLine("");
 
-            ClaseBaseMamiferos m2 = new ClaseBaseMamiferos();
-            m2.TipoAnimal = "Gato";
+            Mamifero m2 = new Mamifero();
             m2.idAnimal = 2;
-            ClaseGato g1 = new ClaseGato( "Es Pequeño");
+            m2.TipoAnimal = "Gato";
+            m2.Comida = "Doogui";
 
-            Console.WriteLine("Tipo de Animal: " + m2.TipoAnimal);
+            Gato g1 = new Gato("Lulu", 4, "Es Grande", "Es Lindo");
+
+            Console.WriteLine("Especie del Animal: " + m2.TipoAnimal);
             Console.WriteLine("Nombre: " + g1.Nombre );
+            Console.WriteLine("El Animal es Domestico :  " + g1.domestico);
             Console.WriteLine("Peso del Animal: " + g1.Peso);
-            Console.WriteLine("El Animal es Domestico? S/N :  " + g1.domestico);
+            Console.WriteLine("Numeros de Patas: " + g1.NumeroPatas);
+            Console.WriteLine("Su Alimentacion es: " + m2.Comida);
             g1.Maullar();
+            Console.WriteLine("");
+            Console.WriteLine("");
 
-            ClaseBaseMamiferos m3 = new ClaseBaseMamiferos();
-            m3.TipoAnimal = "Mono";
-            m3.idAnimal = 3;
-            ClaseMono m1 = new ClaseMono( "Es Grande");
+            Mamifero t3 = new Mamifero();
+            t3.idAnimal = 3;
+            t3.TipoAnimal = "Mono";
+            t3.idNombre ="Gogo";
+            t3.Maullar = "i-i-i";
+            t3.Comida = "Frutas";
 
-            Console.WriteLine("Tipo de Animal: " + m3.TipoAnimal);
-            Console.WriteLine("Nombre: " + m1.Nombre );
-            Console.WriteLine("Peso del Animal: " + m1.Comida);
-            m1.Maullar();
-            Console.WriteLine("******************************************************");
+            Console.WriteLine("Especie del Animal: " + t3.TipoAnimal);
+            Console.WriteLine("Nombre: " + t3.idNombre );
+            Console.WriteLine("SONIDO ES: " + t3.Maullar);
+            Console.WriteLine("Su Alimentacion es: " + t3.Comida);
+          
+           
+            Console.WriteLine("*****************************************************************");
+
+            Console.WriteLine("");
+
+            Console.WriteLine("**************************Animales Aves***************************");
 
 
-            Console.WriteLine("**************************AVES*************************");
-            ClaseBaseAves a1 = new ClaseBaseAves();
+            Aves a1 = new Aves();
             a1.TipoAnimal = "Ave";
             a1.idAnimal = 1;
-            ClaseAguila ag1 = new ClaseAguila();
+            Aguila ag1 = new Aguila();
             ag1.NombreAve = "Aguila";
             ag1.ColorPlumaje = "Cafe con pintas negras";
-            ag1.LugardeHabitat = "Cerros o Bosques";
+            ag1.Habitat = "Cerros o Bosques";
             ag1.tipoAguila = "Aguila Harpia";
-            
-            Console.WriteLine("Tipo de Animal: " + a1.TipoAnimal);
+            ag1.Comida= "Semillas y Inceptos";
+
+            Console.WriteLine("Especie del Animal: " + a1.TipoAnimal);
             Console.WriteLine("Nombre: " + ag1.NombreAve );
-            Console.WriteLine("Color del Plumaje:  " + ag1.ColorPlumaje);
-            Console.WriteLine("El Hábitat del Animal es:  " + ag1.Habitat);
-            ag1.VolarAlto();
+            Console.WriteLine("Color de la pluma de la especie:  " + ag1.ColorPlumaje);
+            Console.WriteLine("El Hábitat  es:  " + ag1.Habitat);
             ag1.Corre();
+            ag1.VolarAlto();
+            Console.WriteLine("Su Alimentacion es: " + ag1.Comida);
             Console.WriteLine("");
             Console.WriteLine("");
 
-            ClaseBaseAves a2 = new ClaseBaseAves();
+            Aves a2 = new Aves();
             a2.TipoAnimal = "Ave";
             a2.idAnimal = 2;
-            ClaseLoro L1 = new ClaseLoro();
+            Loro L1 = new Loro();
             L1.NombreAve = "Loro";
-            L1.Comida= "Semillas";
-            L1.Habitat = "Selva";
+            L1.Habitat = "En lugares frescos";
             L1.ColorPlumaje = "Amarillo";
-            
-            Console.WriteLine("Tipo de Animal: " + a2.TipoAnimal);
+            L1.Comida= "Semillas y Inceptos";
+
+            Console.WriteLine("Especie del Animal: " + a2.TipoAnimal);
             Console.WriteLine("Nombre: " + L1.NombreAve );
-            Console.WriteLine("Color del Plumaje:  " + L1.ColorPlumaje);
-            Console.WriteLine("El Hábitat del Animal es:  " + L1.Habitat);
-            Console.WriteLine("Se alimenta de: " + L1.Comida);
-            L1.Volar();
+            Console.WriteLine("El Hábitat es:  " + L1.Habitat);
+            Console.WriteLine("Su Alimentacion es: " + L1.Comida);
+            Console.WriteLine("Color de la pluma de la especie:  " + L1.ColorPlumaje);
             L1.Corre();
+            L1.Hablar();
+            
             Console.WriteLine("********************************************************************");
+            Console.WriteLine("");
 
 
-            Console.WriteLine("*******************************ACUATICOS****************************");
-
-            ClaseBasePeces p = new ClaseBasePeces();
-            gl1.NombrePez = "Pez Globo";
-            p.idAnimal = 1;
+            Console.WriteLine("**************************Animales ACUATICOS*************************");
+            Peces p = new Peces();
             p.TipoAnimal = "Acuatico";
-            ClasePezGlobo gl1 = new ClasePezGlobo();
+            p.idAnimal = 1;
+            PezGlobo gl1 = new PezGlobo();
+            gl1.NombrePez = "Pez Globo";
             gl1.Color = "Cafe claro";
-            gl1.NumerodeAletas = 2;
+            gl1.NumeroAletas = 2;
             gl1.Alimentacion = "ALGAS, ANIMALES INVERTEBRADOS";
             
-            Console.WriteLine("Tipo de Animal: " + p.TipoAnimal);
+            Console.WriteLine("Especie del Animal: " + p.TipoAnimal);
             Console.WriteLine("Nombre: " + gl1.NombrePez );
-            Console.WriteLine("Color del Pez:  " + gl1.Color);
-            Console.WriteLine("Se Alimenta de: " + gl1.Alimentacion);
-            gl1.Nadar();
+            Console.WriteLine("Numeros de Aletas:  " + gl1.NumeroAletas);
+            Console.WriteLine("Su Alimentacion es: " + gl1.Alimentacion);
+            Console.WriteLine("Color del Especie:  " + gl1.Color); 
             gl1.caracteristica();
+            gl1.Nadar();
 
             Console.WriteLine("********************************************************************");
 

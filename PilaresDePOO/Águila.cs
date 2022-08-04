@@ -2,13 +2,12 @@ using System;
 
 namespace PilaresDePOO
 {
-    class ClaseAguila:ClaseBaseAves
+    class Aguila:Aves
     {
-    
+        public string tipoAguila { get; set; }
         public void VolarAlto()
         {
             Console.WriteLine("Vuela Alto");
         }
-        public string tipoAguila { get; set; }
     }
 }

@@ -1,22 +1,21 @@
 using System;
 namespace PilaresDePOO
 {
-     class ClaseBaseAves: ClaseBaseAnimal
+     class Aves: Animal
     {
 
         public string NombreAve { get; set; }
 
         public string ColorPlumaje { get; set; }
 
-        public string LugardeHabitat { get; set; }
-        
+        public string Habitat { get; set; }
         
         public void Volar()
         {
-            Console.WriteLine("PUEDE VOLAR");
+            Console.WriteLine("Puede Volar");
         }
 
-        public void Corre()
+         public void Corre()
         {
             if (NombreAve == "Aguila" )
             {
@@ -35,7 +34,7 @@ namespace PilaresDePOO
 
         private void CorreLento()
         {
-            Console.WriteLine("El Ave carre lento");
+            Console.WriteLine("El Ave corre lento");
         }
     }
 }

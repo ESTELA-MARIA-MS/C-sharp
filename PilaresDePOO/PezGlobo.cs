@@ -2,7 +2,7 @@ using System;
 
 namespace PilaresDePOO
 {
-    class ClasePezGlobo:ClaseBasePeces
+    class PezGlobo:Peces
     {
         public string Alimentacion { get; set; }
         public void caracteristica()
@@ -12,7 +12,7 @@ namespace PilaresDePOO
 
         private void robusto()
         {
-            Console.WriteLine("PARTICULARIDAD DEL ANIMAL: Se infla");
+            Console.WriteLine(" El ANIMAL: Se infla");
         }
     }
 }

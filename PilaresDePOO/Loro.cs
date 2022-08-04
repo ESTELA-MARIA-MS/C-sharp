@@ -2,7 +2,7 @@ using System;
 
 namespace PilaresDePOO
 {
-    class ClaseLoro:ClaseBaseAves
+    class Loro:Aves
 
     {
         public string Comida { get; set; }
@@ -10,6 +10,7 @@ namespace PilaresDePOO
         {
             comunicacion();
         }
+
         private void comunicacion()
         {
                 Console.WriteLine("El Animal Puede Hablar");
