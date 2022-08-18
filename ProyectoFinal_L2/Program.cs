@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Estadisticas
+namespace EstadisticasDelCovid_19
 {
     
     class Program
